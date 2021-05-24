@@ -17,7 +17,7 @@ router.post('/add', async (req, res) => {
     let username = req.body.username;
     let description = req.body.description;
     let duration = Number(req.body.duration);
-    let date = Date.parse(req.body.date);
+    let date = req.body.date;
 
     await new Exercise({ username, description, duration, date }).save();
 

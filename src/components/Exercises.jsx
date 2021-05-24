@@ -27,21 +27,19 @@ const Exercises = () => {
         </tr>
       </thead>
       <tbody>
-        {exercises.length ? (
-          exercises.map((exercise) => {
-            return (
-              <tr key={exercise.id}>
-                <td> {exercise.username} </td>
-                <td> {exercise.description} </td>
-                <td> {exercise.duration} </td>
-                <td> {exercise.date} </td>
-                <td> {exercise.date} </td>
-              </tr>
-            );
-          })
-        ) : (
-          <h1>Bye</h1>
-        )}
+        {exercises.length
+          ? exercises.map((exercise) => {
+              return (
+                <tr key={exercise._id}>
+                  <td> {exercise.username} </td>
+                  <td> {exercise.description} </td>
+                  <td> {exercise.duration} </td>
+                  <td> {exercise.date} </td>
+                  <td> {exercise._id} </td>
+                </tr>
+              );
+            })
+          : null}
       </tbody>
     </table>
   );

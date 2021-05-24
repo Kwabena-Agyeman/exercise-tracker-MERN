@@ -27,7 +27,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link style={{ fontSize: '20px' }} className='nav-link text-white' href='#'>
+              <Link style={{ fontSize: '20px' }} className='nav-link text-white' to='/create-exercise'>
                 Create Exercise Log
               </Link>
             </li>
