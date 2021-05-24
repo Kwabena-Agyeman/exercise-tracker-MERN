@@ -7,6 +7,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use('/exercise', require('./routes/exercise'));
+app.use('/user', require('./routes/user'));
+
 connectDB();
 const PORT = process.env.PORT || 5000;
 
