@@ -32,7 +32,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link style={{ fontSize: '20px' }} className='nav-link text-white' to='/'>
+              <Link style={{ fontSize: '20px' }} className='nav-link text-white' to='/create-user'>
                 Create User
               </Link>
             </li>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 
-const CreateExercise = () => {
+const EditExercise = () => {
   const [exercise, setExercise] = useState({
     username: undefined,
     description: '',
@@ -167,4 +167,4 @@ const CreateExercise = () => {
   );
 };
 
-export default CreateExercise;
+export default EditExercise;
